@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contact | Nexgrow Agency</title>
+
+  <meta name="description" content="Contact Nexgrow Agency for digital marketing, SEO, Meta Ads, Google Ads, social media management, content creation and website development.">
+
+  <meta name="author" content="Nexgrow Agency">
+
+  <style>
+    :root {
+      --black: #0A0A0A;
+      --black-soft: #111111;
+      --cream: #F4F1EA;
+      --lime: #C8FF3D;
+      --gray: #A6A39B;
+      --border: rgba(244,241,234,.14);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--black);
+      color: var(--cream);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.5;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1180px, 90%);
+      margin: auto;
+    }
+
+    /* NAVBAR */
+
+    header {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .navbar {
+      min-height: 82px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 900;
+      letter-spacing: -1.5px;
+    }
+
+    .logo span {
+      color: var(--lime);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 27px;
+      color: var(--gray);
+      font-size: 14px;
+    }
+
+    .nav-links a:hover {
+      color: var(--cream);
+    }
+
+    .nav-btn {
+      background: var(--lime);
+      color: var(--black);
+      padding: 12px 20px;
+      border-radius: 100px;
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    /* HERO */
+
+    .hero {
+      padding: 105px 0 75px;
+    }
+
+    .eyebrow {
+      color: var(--lime);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: clamp(58px, 9vw, 110px);
+      line-height: .86;
+      letter-spacing: -7px;
+      max-width: 900px;
+    }
+
+    h1 span {
+      color: var(--lime);
+    }
+
+    .hero-text {
+      color: var(--gray);
+      font-size: 17px;
+      max-width: 620px;
+      margin-top: 30px;
+    }
+
+    /* CONTACT */
+
+    .contact-section {
+      padding: 25px 0 110px;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: .75fr 1.25fr;
+      gap: 55px;
+      align-items: start;
+    }
+
+    /* INFO */
+
+    .info-title {
+      font-size: 14px;
+      color: var(--lime);
+      font-weight: 800;
+      letter-spacing: 1px;
+      margin-bottom: 25px;
+    }
+
+    .info-block {
+      padding: 22px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .info-block:last-child {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .info-label {
+      color: var(--gray);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 6px;
+    }
+
+    .info-value {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .info-value:hover {
+      color: var(--lime);
+    }
+
+    .founder {
+      background: var(--black-soft);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 28px;
+      margin-bottom: 22px;
+    }
+
+    .founder-number {
+      color: var(--lime);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 1px;
+    }
+
+    .founder h2 {
+      font-size: 38px;
+      letter-spacing: -2px;
+      margin-top: 45px;
+    }
+
+    .founder p {
+      color: var(--gray);
+      font-size: 14px;
+      margin-top: 5px;
+    }
+
+    /* FORM */
+
+    .form-box {
+      background: var(--cream);
+      color: var(--black);
+      border-radius: 25px;
+      padding: 42px;
+    }
+
+    .form-top {
+      margin-bottom: 32px;
+    }
+
+    .form-top small {
+      color: #718F00;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+    }
+
+    .form-top h2 {
+      font-size: clamp(38px, 5vw, 58px);
+      line-height: .95;
+      letter-spacing: -3px;
+      margin-top: 10px;
+    }
+
+    .form-top p {
+      color: #66635d;
+      font-size: 14px;
+      margin-top: 15px;
+      max-width: 520px;
+    }
+
+    .form-group {
+      margin-bottom: 19px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: .8px;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      border: 1px solid #d2cfc7;
+      background: #fff;
+      color: var(--black);
+      border-radius: 10px;
+      padding: 14px;
+      font-family: inherit;
+      font-size: 14px;
+      outline: none;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: var(--black);
+    }
+
+    textarea {
+      min-height: 135px;
+      resize: vertical;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
+    .submit-btn {
+      width: 100%;
+      border: 0;
+      background: var(--black);
+      color: var(--cream);
+      padding: 17px 20px;
+      border-radius: 100px;
+      font-size: 14px;
+      font-weight: 900;
+      cursor: pointer;
+      margin-top: 8px;
+    }
+
+    .submit-btn:hover {
+      background: #202020;
+    }
+
+    .form-note {
+      text-align: center;
+      color: #77736b;
+      font-size: 11px;
+      margin-top: 12px;
+    }
+
+    /* QUICK CONTACT */
+
+    .quick-contact {
+      padding: 0 0 110px;
+    }
+
+    .quick-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .quick-card {
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 30px;
+      transition: .25s ease;
+    }
+
+    .quick-card:hover {
+      border-color: var(--lime);
+      transform: translateY(-5px);
+    }
+
+    .quick-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: var(--lime);
+      color: var(--black);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      margin-bottom: 25px;
+    }
+
+    .quick-card h3 {
+      font-size: 22px;
+      margin-bottom: 7px;
+    }
+
+    .quick-card p {
+      color: var(--gray);
+      font-size: 13px;
+    }
+
+    .quick-card strong {
+      display: block;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    /* CTA */
+
+    .cta {
+      background: var(--lime);
+      color: var(--black);
+      padding: 95px 0;
+    }
+
+    .cta-label {
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+
+    .cta h2 {
+      font-size: clamp(48px, 7vw, 85px);
+      line-height: .9;
+      letter-spacing: -5px;
+      max-width: 850px;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      background: var(--black);
+      color: var(--cream);
+      padding: 15px 23px;
+      border-radius: 100px;
+      margin-top: 35px;
+      font-weight: 800;
+    }
+
+    /* FOOTER */
+
+    footer {
+      padding: 55px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .footer-grid {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .footer-text {
+      color: var(--gray);
+      font-size: 13px;
+      margin-top: 10px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 22px;
+      color: var(--gray);
+      font-size: 13px;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--border);
+      margin-top: 45px;
+      padding-top: 20px;
+      color: var(--gray);
+      font-size: 12px;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 850px) {
+
+      .nav-links {
+        display: none;
+      }
+
+      .hero {
+        padding: 75px 0 60px;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .form-box {
+        padding: 30px 22px;
+      }
+
+      .quick-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 520px) {
+
+      .navbar {
+        min-height: 70px;
+      }
+
+      .nav-btn {
+        padding: 10px 15px;
+        font-size: 12px;
+      }
+
+      h1 {
+        font-size: 57px;
+        letter-spacing: -4px;
+      }
+
+      .hero-text {
+        font-size: 15px;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .form-top h2 {
+        letter-spacing: -2px;
+      }
+
+      .cta h2 {
+        letter-spacing: -3px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+
+  <header>
+    <div class="container">
+
+      <nav class="navbar">
+
+        <a href="index.html" class="logo">
+          NEXGROW<span>.</span>
+        </a>
+
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <a href="#contact-form" class="nav-btn">
+          Get a Quote
+        </a>
+
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+      <div class="container">
+
+        <p class="eyebrow">
+          CONTACT NEXGROW / START A PROJECT
+        </p>
+
+        <h1>
+          Let's Make
+          <span>It Grow.</span>
+        </h1>
+
+        <p class="hero-text">
+          Have a business, idea or project you want to take
+          further? Tell us what you're working on and our team
+          will get back to you with the next steps.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONTACT AREA -->
+
+    <section class="contact-section">
+
+      <div class="container">
+
+        <div class="contact-grid">
+
+
+          <!-- CONTACT INFORMATION -->
+
+          <div>
+
+            <div class="founder">
+
+              <div class="founder-number">
+                NEXGROW / FOUNDER
+              </div>
+
+              <h2>
+                Shahid
+              </h2>
+
+              <p>
+                Founder, Nexgrow Agency
+              </p>
+
+            </div>
+
+
+            <div class="info-title">
+              GET IN TOUCH
+            </div>
+
+
+            <div class="info-block">
+
+              <div class="info-label">
+                Email
+              </div>
+
+              <a
+                class="info-value"
+                href="mailto:hellonexgrowagency@gmail.com"
+              >
+                hellonexgrowagency@gmail.com
+              </a>
+
+            </div>
+
+
+            <div class="info-block">
+
+              <div class="info-label">
+                WhatsApp
+              </div>
+
+              <a
+                class="info-value"
+                href="https://wa.me/918240688108"
+                target="_blank"
+              >
+                +91 82406 88108
+              </a>
+
+            </div>
+
+
+            <div class="info-block">
+
+              <div class="info-label">
+                Instagram
+              </div>
+
+              <a
+                class="info-value"
+                href="https://instagram.com/nexgrow_agency"
+                target="_blank"
+              >
+                @nexgrow_agency
+              </a>
+
+            </div>
+
+
+            <div class="info-block">
+
+              <div class="info-label">
+                Availability
+              </div>
+
+              <div class="info-value">
+                Open for New Projects
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- FORM -->
+
+          <div class="form-box" id="contact-form">
+
+            <div class="form-top">
+
+              <small>
+                PROJECT ENQUIRY
+              </small>
+
+              <h2>
+                Get a Customer Quote.
+              </h2>
+
+              <p>
+                Share a few details about your project.
+                We'll use the information to understand what
+                your business needs.
+              </p>
+
+            </div>
+
+
+            <form id="projectForm">
+
+
+              <div class="form-row">
+
+                <div class="form-group">
+
+                  <label for="name">
+                    Your Name *
+                  </label>
+
+                  <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                    required
+                  >
+
+                </div>
+
+
+                <div class="form-group">
+
+                  <label for="email">
+                    Email *
+                  </label>
+
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="you@example.com"
+                    required
+                  >
+
+                </div>
+
+              </div>
+
+
+              <div class="form-row">
+
+                <div class="form-group">
+
+                  <label for="business">
+                    Business / Brand
+                  </label>
+
+                  <input
+                    type="text"
+                    id="business"
+                    placeholder="Your business name"
+                  >
+
+                </div>
+
+
+                <div class="form-group">
+
+                  <label for="phone">
+                    WhatsApp / Phone
+                  </label>
+
+                  <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Your number"
+                  >
+
+                </div>
+
+              </div>
+
+
+              <div class="form-group">
+
+                <label for="service">
+                  Service Required *
+                </label>
+
+                <select id="service" required>
+
+                  <option value="">
+                    Select a service
+                  </option>
+
+                  <option>
+                    SEO Services
+                  </option>
+
+                  <option>
+                    Google Ads
+                  </option>
+
+                  <option>
+                    Meta Ads
+                  </option>
+
+                  <option>
+                    Social Media Management
+                  </option>
+
+                  <option>
+                    Content Creation
+                  </option>
+
+                  <option>
+                    Website Development
+                  </option>
+
+                  <option>
+                    Google Business Profile
+                  </option>
+
+                  <option>
+                    Multiple Services
+                  </option>
+
+                  <option>
+                    Not Sure Yet
+                  </option>
+
+                </select>
+
+              </div>
+
+
+              <div class="form-group">
+
+                <label for="message">
+                  Tell Us About Your Project *
+                </label>
+
+                <textarea
+                  id="message"
+                  placeholder="Tell us about your business, goals, requirements or anything else we should know..."
+                  required
+                ></textarea>
+
+              </div>
+
+
+              <button
+                type="submit"
+                class="submit-btn"
+              >
+                Send Project Enquiry →
+              </button>
+
+              <p class="form-note">
+                Your enquiry will open WhatsApp and your email
+                app with the project details prepared.
+              </p>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- QUICK CONTACT -->
+
+    <section class="quick-contact">
+
+      <div class="container">
+
+        <div class="quick-grid">
+
+
+          <a
+            href="https://wa.me/918240688108"
+            target="_blank"
+            class="quick-card"
+          >
+
+            <div class="quick-icon">
+              W
+            </div>
+
+            <h3>
+              WhatsApp
+            </h3>
+
+            <p>
+              Prefer a quick conversation?
+              Message Nexgrow directly.
+            </p>
+
+            <strong>
+              Chat on WhatsApp →
+            </strong>
+
+          </a>
+
+
+          <a
+            href="https://instagram.com/nexgrow_agency"
+            target="_blank"
+            class="quick-card"
+          >
+
+            <div class="quick-icon">
+              IG
+            </div>
+
+            <h3>
+              Instagram
+            </h3>
+
+            <p>
+              See our latest creative work,
+              ideas and updates.
+            </p>
+
+            <strong>
+              Visit Instagram →
+            </strong>
+
+          </a>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CTA -->
+
+    <section class="cta">
+
+      <div class="container">
+
+        <div class="cta-label">
+          YOUR NEXT MOVE STARTS HERE
+        </div>
+
+        <h2>
+          Good Ideas
+          Deserve
+          <br>
+          <strong>Good Execution.</strong>
+        </h2>
+
+        <a
+          href="mailto:hellonexgrowagency@gmail.com"
+          class="cta-btn"
+        >
+          Email Nexgrow →
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div>
+
+          <div class="logo">
+            NEXGROW<span>.</span>
+          </div>
+
+          <p class="footer-text">
+            Digital Growth. Real Results.
+          </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+          <a href="index.html">Home</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About Us</a>
+
+        </div>
+
+      </div>
+
+
+      <div class="footer-bottom">
+        © 2026 Nexgrow Agency. All rights reserved.
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- FORM SCRIPT -->
+
+  <script>
+
+    document.getElementById("projectForm").addEventListener("submit", function(event) {
+
+      event.preventDefault();
+
+      const name =
+        document.getElementById("name").value.trim();
+
+      const email =
+        document.getElementById("email").value.trim();
+
+      const business =
+        document.getElementById("business").value.trim();
+
+      const phone =
+        document.getElementById("phone").value.trim();
+
+      const service =
+        document.getElementById("service").value;
+
+      const message =
+        document.getElementById("message").value.trim();
+
+
+      const whatsappMessage =
+`Hello Nexgrow Agency,
+
+I would like to get a customer quote.
+
+Name: ${name}
+Email: ${email}
+Business / Brand: ${business || "Not provided"}
+WhatsApp / Phone: ${phone || "Not provided"}
+Service Required: ${service}
+
+Project Details:
+${message}`;
+
+
+      const emailSubject =
+        encodeURIComponent(
+          "New Project Enquiry - Nexgrow Agency"
+        );
+
+
+      const emailBody =
+        encodeURIComponent(
+          `Hello Nexgrow Agency,
+
+I would like to get a customer quote.
+
+Name: ${name}
+Email: ${email}
+Business / Brand: ${business || "Not provided"}
+WhatsApp / Phone: ${phone || "Not provided"}
+Service Required: ${service}
+
+Project Details:
+${message}`
+        );
+
+
+      const whatsappURL =
+        "https://wa.me/918240688108?text=" +
+        encodeURIComponent(whatsappMessage);
+
+
+      const emailURL =
+        "mailto:hellonexgrowagency@gmail.com?subject=" +
+        emailSubject +
+        "&body=" +
+        emailBody;
+
+
+      window.open(whatsappURL, "_blank");
+
+      setTimeout(function() {
+        window.location.href = emailURL;
+      }, 700);
+
+    });
+
+  </script>
+
+</body>
+</html>

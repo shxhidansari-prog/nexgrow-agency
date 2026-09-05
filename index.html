@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Nexgrow Agency | Digital Growth & Marketing</title>
+
+  <meta name="description" content="Nexgrow Agency helps modern businesses grow online through Meta Ads, Google Ads, website design, SEO, branding and social media marketing.">
+
+  <meta name="keywords" content="Nexgrow Agency, digital marketing agency, Meta Ads, Google Ads, SEO, website design, logo design, SMO">
+
+  <meta name="author" content="Nexgrow Agency">
+
+  <style>
+    :root {
+      --black: #0A0A0A;
+      --black-soft: #111111;
+      --cream: #F4F1EA;
+      --lime: #C8FF3D;
+      --gray: #A6A39B;
+      --border: rgba(244, 241, 234, 0.14);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--black);
+      color: var(--cream);
+      line-height: 1.5;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1180px, 90%);
+      margin: auto;
+    }
+
+    /* NAVBAR */
+
+    header {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .navbar {
+      min-height: 82px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 900;
+      letter-spacing: -1.5px;
+    }
+
+    .logo span {
+      color: var(--lime);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      align-items: center;
+      font-size: 14px;
+      color: var(--gray);
+    }
+
+    .nav-links a:hover {
+      color: var(--cream);
+    }
+
+    .nav-btn {
+      background: var(--lime);
+      color: var(--black);
+      padding: 12px 20px;
+      border-radius: 100px;
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    /* HERO */
+
+    .hero {
+      padding: 105px 0 90px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      color: var(--lime);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      font-size: clamp(55px, 8vw, 105px);
+      line-height: 0.91;
+      letter-spacing: -6px;
+      max-width: 800px;
+    }
+
+    h1 span {
+      color: var(--lime);
+    }
+
+    .hero-text {
+      color: var(--gray);
+      max-width: 570px;
+      font-size: 17px;
+      margin-top: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 14px;
+      margin-top: 35px;
+      flex-wrap: wrap;
+    }
+
+    .primary-btn {
+      background: var(--lime);
+      color: var(--black);
+      padding: 15px 23px;
+      border-radius: 100px;
+      font-weight: 800;
+      display: inline-block;
+    }
+
+    .secondary-btn {
+      border: 1px solid var(--border);
+      padding: 14px 23px;
+      border-radius: 100px;
+      font-weight: 700;
+      display: inline-block;
+    }
+
+    .secondary-btn:hover {
+      border-color: var(--cream);
+    }
+
+    /* HERO VISUAL */
+
+    .hero-visual {
+      min-height: 470px;
+      background: var(--cream);
+      color: var(--black);
+      border-radius: 28px;
+      padding: 25px;
+      position: relative;
+      overflow: hidden;
+      transform: rotate(1deg);
+    }
+
+    .visual-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 1px;
+    }
+
+    .visual-dot {
+      width: 12px;
+      height: 12px;
+      background: var(--lime);
+      border-radius: 50%;
+    }
+
+    .visual-title {
+      position: absolute;
+      left: 28px;
+      bottom: 120px;
+      font-size: 64px;
+      line-height: .88;
+      font-weight: 900;
+      letter-spacing: -5px;
+    }
+
+    .visual-title span {
+      color: #111;
+    }
+
+    .visual-card {
+      position: absolute;
+      right: 25px;
+      bottom: 28px;
+      background: var(--black);
+      color: var(--cream);
+      width: 190px;
+      padding: 20px;
+      border-radius: 18px;
+    }
+
+    .visual-card small {
+      color: var(--gray);
+      font-size: 11px;
+    }
+
+    .visual-number {
+      color: var(--lime);
+      font-size: 38px;
+      font-weight: 900;
+      margin-top: 5px;
+    }
+
+    /* STATS */
+
+    .stats {
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 32px 0;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .stat strong {
+      font-size: 34px;
+      display: block;
+    }
+
+    .stat span {
+      color: var(--gray);
+      font-size: 13px;
+    }
+
+    /* SECTION */
+
+    section {
+      padding: 110px 0;
+    }
+
+    .section-label {
+      color: var(--lime);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      margin-bottom: 18px;
+    }
+
+    .section-heading {
+      font-size: clamp(42px, 6vw, 75px);
+      line-height: .95;
+      letter-spacing: -4px;
+      max-width: 800px;
+    }
+
+    .section-heading span {
+      color: var(--lime);
+    }
+
+    /* SERVICES */
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 55px;
+    }
+
+    .service-card {
+      background: var(--black-soft);
+      border: 1px solid var(--border);
+      padding: 30px;
+      min-height: 250px;
+      border-radius: 20px;
+      transition: .25s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--lime);
+    }
+
+    .service-number {
+      color: var(--lime);
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .service-card h3 {
+      font-size: 25px;
+      margin: 45px 0 12px;
+    }
+
+    .service-card p {
+      color: var(--gray);
+      font-size: 14px;
+    }
+
+    /* PROCESS */
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+      margin-top: 55px;
+    }
+
+    .process-card {
+      border-top: 1px solid var(--border);
+      padding-top: 22px;
+    }
+
+    .process-card strong {
+      color: var(--lime);
+      font-size: 13px;
+    }
+
+    .process-card h3 {
+      margin: 25px 0 10px;
+      font-size: 21px;
+    }
+
+    .process-card p {
+      color: var(--gray);
+      font-size: 14px;
+    }
+
+    /* CTA */
+
+    .cta {
+      background: var(--cream);
+      color: var(--black);
+      padding: 100px 0;
+    }
+
+    .cta .section-label {
+      color: #111;
+    }
+
+    .cta h2 {
+      font-size: clamp(45px, 7vw, 85px);
+      line-height: .92;
+      letter-spacing: -5px;
+      max-width: 850px;
+    }
+
+    .cta h2 span {
+      color: #6B8F00;
+    }
+
+    .cta .primary-btn {
+      margin-top: 35px;
+      background: var(--black);
+      color: var(--cream);
+    }
+
+    /* FOOTER */
+
+    footer {
+      padding: 55px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .footer-grid {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .footer-text {
+      color: var(--gray);
+      font-size: 13px;
+      margin-top: 12px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 22px;
+      color: var(--gray);
+      font-size: 13px;
+    }
+
+    .footer-bottom {
+      margin-top: 45px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      color: var(--gray);
+      font-size: 12px;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 850px) {
+
+      .navbar {
+        padding: 18px 0;
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .hero {
+        padding: 75px 0 65px;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 55px;
+      }
+
+      h1 {
+        letter-spacing: -4px;
+      }
+
+      .hero-visual {
+        min-height: 390px;
+      }
+
+      .visual-title {
+        font-size: 50px;
+      }
+
+      .stats-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .process-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      section {
+        padding: 75px 0;
+      }
+    }
+
+    @media (max-width: 520px) {
+
+      .nav-btn {
+        padding: 10px 15px;
+        font-size: 12px;
+      }
+
+      h1 {
+        font-size: 55px;
+      }
+
+      .hero-text {
+        font-size: 15px;
+      }
+
+      .hero-visual {
+        min-height: 350px;
+      }
+
+      .visual-title {
+        font-size: 42px;
+      }
+
+      .visual-card {
+        width: 160px;
+      }
+
+      .process-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .section-heading {
+        letter-spacing: -2.5px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+
+  <header>
+    <div class="container">
+      <nav class="navbar">
+
+        <a href="index.html" class="logo">
+          NEXGROW<span>.</span>
+        </a>
+
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <a href="contact.html" class="nav-btn">
+          Let's Talk
+        </a>
+
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- HERO -->
+
+  <main>
+
+    <section class="hero">
+      <div class="container">
+
+        <div class="hero-grid">
+
+          <div>
+
+            <p class="eyebrow">
+              DIGITAL GROWTH AGENCY
+            </p>
+
+            <h1>
+              We Make<br>
+              Brands <span>Grow.</span>
+            </h1>
+
+            <p class="hero-text">
+              Nexgrow Agency helps modern businesses attract customers,
+              build stronger brands and grow online through smart
+              digital marketing, creative design and performance-focused
+              strategies.
+            </p>
+
+            <div class="buttons">
+
+              <a href="portfolio.html" class="primary-btn">
+                View Our Work →
+              </a>
+
+              <a href="contact.html" class="secondary-btn">
+                Start a Project
+              </a>
+
+            </div>
+
+          </div>
+
+
+          <!-- AGENCY VISUAL -->
+
+          <div class="hero-visual">
+
+            <div class="visual-top">
+              <span>NEXGROW / 2026</span>
+              <div class="visual-dot"></div>
+            </div>
+
+            <div class="visual-title">
+              DIGITAL<br>
+              <span>GROWTH.</span>
+            </div>
+
+            <div class="visual-card">
+              <small>WHAT WE BUILD</small>
+              <div class="visual-number">∞</div>
+              <p>
+                Brands that move forward.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- STATS / POSITIONING -->
+
+    <div class="stats">
+      <div class="container">
+
+        <div class="stats-grid">
+
+          <div class="stat">
+            <strong>01</strong>
+            <span>Strategy First</span>
+          </div>
+
+          <div class="stat">
+            <strong>02</strong>
+            <span>Creative That Connects</span>
+          </div>
+
+          <div class="stat">
+            <strong>03</strong>
+            <span>Growth Focused</span>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- SERVICES -->
+
+    <section>
+      <div class="container">
+
+        <p class="section-label">
+          WHAT WE DO
+        </p>
+
+        <h2 class="section-heading">
+          Everything Your Brand Needs To
+          <span>Grow Online.</span>
+        </h2>
+
+        <div class="services-grid">
+
+          <article class="service-card">
+            <div class="service-number">01 / PERFORMANCE</div>
+            <h3>Meta Ads</h3>
+            <p>
+              Facebook and Instagram advertising designed to reach
+              the right audience and turn attention into action.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-number">02 / PERFORMANCE</div>
+            <h3>Google Ads</h3>
+            <p>
+              Search and performance campaigns designed to connect
+              your business with people actively looking for it.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-number">03 / DIGITAL</div>
+            <h3>Website Design</h3>
+            <p>
+              Modern, responsive websites that communicate your
+              brand clearly and create a strong first impression.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-number">04 / ORGANIC</div>
+            <h3>SEO</h3>
+            <p>
+              Search optimization focused on improving visibility,
+              discoverability and long-term organic growth.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-number">05 / BRANDING</div>
+            <h3>Logo Design</h3>
+            <p>
+              Distinctive visual identities designed to make your
+              business recognizable and memorable.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-number">06 / SOCIAL</div>
+            <h3>SMO</h3>
+            <p>
+              Social media optimization that helps your brand
+              communicate consistently and build stronger visibility.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- PROCESS -->
+
+    <section>
+      <div class="container">
+
+        <p class="section-label">
+          OUR APPROACH
+        </p>
+
+        <h2 class="section-heading">
+          Simple Process.
+          <span>Serious Intent.</span>
+        </h2>
+
+        <div class="process-grid">
+
+          <div class="process-card">
+            <strong>01</strong>
+            <h3>Understand</h3>
+            <p>
+              We understand your business, audience, goals and
+              current digital presence.
+            </p>
+          </div>
+
+          <div class="process-card">
+            <strong>02</strong>
+            <h3>Plan</h3>
+            <p>
+              We create a focused strategy based on what your
+              business actually needs.
+            </p>
+          </div>
+
+          <div class="process-card">
+            <strong>03</strong>
+            <h3>Create</h3>
+            <p>
+              We turn the strategy into campaigns, content,
+              websites and creative assets.
+            </p>
+          </div>
+
+          <div class="process-card">
+            <strong>04</strong>
+            <h3>Grow</h3>
+            <p>
+              We focus on continuous improvement and building
+              a stronger digital presence over time.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- CTA -->
+
+    <section class="cta">
+      <div class="container">
+
+        <p class="section-label">
+          READY WHEN YOU ARE
+        </p>
+
+        <h2>
+          Let's Build Something
+          <span>Worth Growing.</span>
+        </h2>
+
+        <a href="contact.html" class="primary-btn">
+          Start a Conversation →
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div>
+          <div class="logo">
+            NEXGROW<span>.</span>
+          </div>
+
+          <p class="footer-text">
+            Digital Growth. Real Results.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <a href="portfolio.html">Portfolio</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        © 2026 Nexgrow Agency. All rights reserved.
+      </div>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
